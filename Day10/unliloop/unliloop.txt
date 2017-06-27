@@ -1,0 +1,17 @@
+Hello!
+this gem is about loops
+it will ask your name then there will be some message i wrote
+the loop will continue unless the person running the programs will
+type please i dont know why i chose this all i want to do is
+annoy people
+
+how to install the gem i created
+this is what i did
+1.on windows shell type in
+"gem build unliloop.gemspec"
+2."gem install unliloop-0.0.7.gem"
+ after that windows shell will tell you
+ that you have finished installing the gem
+3. "irb"
+4. "require 'unliloop'"
+thats all i did 

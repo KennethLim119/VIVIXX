@@ -1,0 +1,248 @@
+system 'cls'
+
+@scw = 112
+@blnce = 2000000
+@cpw = 123456
+@hm = 0
+
+def spce(n)
+  puts "\n" * (n)
+end
+
+def greet
+    puts '=' * @scw
+    puts ' ' * @scw
+    puts ' ' * @scw
+    puts '=' * @scw
+    puts '+' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '+' * @scw
+    puts '|' * @scw
+    puts '=' * @scw
+    puts '=|                         |='.center(@scw, '=')
+    puts '=|     bpi atm machine     |='.upcase.center(@scw, '=')
+    puts '=|                         |='.center(@scw, '=')
+    puts '=' * @scw
+    puts '|' * @scw
+    puts '+' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts '|' * @scw
+    puts ' ' * @scw
+    puts '=' * @scw
+    puts ' ' * @scw
+    puts '     Enter  "E" to withdraw.     '.upcase.center(@scw, '=')
+    puts ' ' * @scw
+    puts '=' * @scw
+  @ent = gets.chomp
+end
+
+def pword
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts '|     Enter password.     |'.upcase.center(@scw, ' ')
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '=' * @scw
+ spce(6)
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '=' * @scw
+  spce(6)
+  puts '=' * @scw
+  print " " * 50 + ">"
+@pw = gets.chomp.to_i
+end
+
+def wd
+  puts '=' * @scw
+  spce(3)
+  puts "|     You have a total balance of php #{@blnce}.     |".upcase.center(@scw, ' ')
+  spce(3    )
+  puts '=' * @scw
+  puts '+' * @scw
+  puts ' ' * @scw
+  puts '|    enter the amount you would want to withdraw     |'.upcase.center(@scw, ' ')
+  puts ' ' * @scw
+  puts '+' * @scw
+  puts '=' * @scw
+  spce(8)
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '=' * @scw
+  spce(5)
+  puts '=' * @scw
+  print " " * 50 + ">"
+@hm = gets.chomp.to_i
+end
+
+def sccs
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts "|     You have a total balance of php #{@blnce}.    |".upcase.center(@scw, ' ')
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '=' * @scw
+  puts '=|                                                     |='.center(@scw, '=')
+  puts '=|       Thank you for you partnership with bpi!       |='.upcase.center(@scw, '=')
+  puts '=|                                                     |='.center(@scw, '=')
+  puts '=' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts '     Enter  "Q" to exit.     '.upcase.center(@scw, '=')
+  puts ' ' * @scw
+  puts '=' * @scw
+@qt = gets.chomp
+end
+
+def wpw
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '=' * @scw
+  puts '=|                         |='.center(@scw, '=')
+  puts '=|     wrong password.     |='.upcase.center(@scw, '=')
+  puts '=|                         |='.center(@scw, '=')
+  puts '=' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts '     Enter  "T" to try again.     '.upcase.center(@scw, '=')
+  puts ' ' * @scw
+  puts '=' * @scw
+@try = gets.chomp
+end
+
+def lim
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '=' * @scw
+  puts '=|                                                                     |='.center(@scw, '=')
+  puts '=|     you are only allowed to withdraw php 20000 per transaction.     |='.upcase.center(@scw, '=')
+  puts '=|                                                                     |='.center(@scw, '=')
+  puts '=' * @scw
+  puts '|' * @scw
+  puts '+' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts '|' * @scw
+  puts ' ' * @scw
+  puts '=' * @scw
+  puts ' ' * @scw
+  puts '     Enter  "A" to enter another value.     '.upcase.center(@scw, '=')
+  puts ' ' * @scw
+  puts '=' * @scw
+@exes = gets.chomp.downcase
+end
+
+# @ent=e  @pword=123456  @blnce=2,000,000  @hm=howmuchmoney
+
+
+while @ent != "q"
+  greet
+    if @ent == "e"
+      pword
+        if @pw == @cpw
+          wd
+            if @hm > 20000
+              lim
+                if @exes == "a"
+                  wd
+                end
+            end
+          @blnce -=  @hm
+          sccs
+        else @pw != @cpw
+          wpw
+        end
+    end
+end
+
+exit

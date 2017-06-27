@@ -1,0 +1,8 @@
+# return = puts only displays return will display and can be placed in a variable
+
+#math
+
+def doSomething(a,b,c,d,e)
+return (a+b+c+d+e)/5
+end
+puts doSomething(2,4,6,10,1)

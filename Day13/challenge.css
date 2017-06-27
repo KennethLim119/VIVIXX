@@ -1,0 +1,97 @@
+html {
+}
+body {
+	background: #fff url(http://eskipaper.com/images/brown-background-6.jpg) bottom right;
+
+      font: 16px/30px Helvetica, Helvetica Neue, Arial;
+      font-family: "jaf-bernino-sans-condensed";
+      font-style: normal;
+    display: block;
+
+}
+
+p {
+          display: block;
+          -webkit-margin-before: 1em;
+          -webkit-margin-after: 1em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+          font: 16px Helvetica, Helvetica Neue, Arial;
+    }
+
+    article {
+        color: #fff;
+        width: 150%;
+        margin: 1% 9%;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 5rem;
+        -moz-column-count: 3;
+        -moz-column-gap: 5rem;
+        column-count: 1;
+        column-gap: 5rem;
+        orphans: 8;
+        opacity: 1;
+        display: block;
+    }
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: gold;
+
+	}
+
+  header h1 {
+    font-weight: 300;
+    margin: 1rem 0 2rem;
+    font-size: 4.4rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+
+  }
+  h1{
+    padding: 0px 50px 0px 50px;
+
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  	}
+header {
+	padding-top: 50px;
+	height: 300px;
+
+}
+
+
+footer {
+	text-align: center;
+	}
+footer a:link, footer a:visited {
+	margin-right: 20px;
+	}
+.heading-5 h2{
+  position:fixed;
+
+}
+.one-column article {
+      color: #fff;
+      margin: 5% 9%;
+      -webkit-column-count: 1;
+      -webkit-column-gap: 0;
+      -moz-column-count: 1;
+      -moz-column-gap: 0;
+      column-count: 1;
+      column-gap: 0;
+      max-width: 720px;
+}
+  div {
+      display: block;
+  }
+  .main.wrapper {
+    margin: 0 auto;
+    padding-bottom: 0;
+}

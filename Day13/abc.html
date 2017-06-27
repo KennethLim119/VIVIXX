@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Supportive Feedback in an Interface | Chris Meeks</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
+
+        <script type="text/javascript" src="//use.typekit.net/sue4rot.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    </head>
+
+<body>
+    <div class="image image-10"></div>
+    <div class="gradient gradient-5"></div>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav>
+	<span class="list dropdown">List of Posts</span>
+	<div class="meta">
+<!-- 		<img src="assets/img/avatar@2x.jpg" alt="Chris Meeks avatar" />
+ -->		<div class="about">
+			<strong>Chris Meeks</strong>
+			<em>Thoughts on Being a Designer</em>
+			<ul class="follow">
+				<li><a href="http://twitter.com/chrismeeks" target="_blank">tweets</a></li>
+				<li><a href="http://dribbble.com/ChrisMeeks" target="_blank">shots</a></li>
+			</ul>
+		</div>
+	</div>
+	<ul class="cd-dropdown">
+	    <li class="link link-5"><a href="supportive-feedback-in-an-interface.html">Supportive Feedback in an Interface</a></li>
+	    <li class="link link-4"><a href="i-cant-get-no-satisfaction.html">I Can't Get No Satisfaction</a></li>
+	    <li class="link link-3"><a href="levels-of-separation.html">Levels of Separation</a></li>
+	    <li class="link link-2"><a href="origin-story-interviews.html">Origin Story Interviews</a></li>
+	    <li class="link link-1"><a href="stop-being-swindled.html">Stop Being Swindled</a></li>
+	    <li class="link link-5"><a href="nesting-before-release.html">Nesting Before a Release</a></li>
+	    <li class="link link-4"><a href="thankful-for-my-weak-points.html">Thankful for My Weak Points</a></li>
+	    <li class="link link-3"><a href="responsibly-shaping-the-world.html">Responsibly Shaping the World</a></li>
+	    <li class="link link-1"><a href="the-practice-of-being-content.html">The Practice of Being Content</a></li>
+	    <li class="link link-2"><a href="dont-throw-good-after-bad.html">Don’t Throw Good After Bad</a></li>
+<!-- 	    <li class="link link-5"><a href="#">The Practice of Being Content</a></li>
+	    <li class="link link-6"><a href="#">Don’t Throw Good After Bad</a></li>
+	    <li class="link link-7"><a href="#">Responsibly Shaping the World</a></li>
+	    <li class="link link-8"><a href="#">The Practice of Being Content</a></li>
+	    <li class="link link-9"><a href="#">Don’t Throw Good After Bad</a></li> -->
+	</ul>
+</nav>
+
+
+
+
+
+
+
+<div class="main-container">
+    <div class="main wrapper one-column clearfix">
+        <article>
+            <header>
+                <h1>Supportive Feedback in an Interface</h1>
+            </header>
+<p>Once we've worked on enough projects with a team, little quips pop into our head as we make early design decisions. “We need to make sure my grandmother can use it.” “We need everybody to know what's possible right away.”</p>
+
+<p>There’s wonderful empathy in those statements. We want our products to serve everybody. Playing favorites with our users overvalues certain perspectives at the expense of others. However, it can be a slippery slope if we start thinking everybody should know how to do everything right away. I've tried designing interfaces like that, and they inevitably become a hot mess of buttons, links, and copy. Ironically, they aren’t easier to use.</p>
+
+<p>I think we can take a more intelligent approach by building interfaces that are trustworthy and supportive experiences, experiences that reward experimentation. People learn by trying something and seeing if it works. That's how we learn to read, write, and play instruments. Unfortunately, most product teams aren't comfortable asking a user to experiment. That's backwards.</p>
+
+<p>I understand the reasoning: you don't want to frustrate users. Frustrating interfaces can drive even the most patient person to become a raging inferno of expletives. The solution is to instead focus on <em>why</em> users get frustrated. Is it because interfaces don't react as they expected them to, or because interfaces don't give them context-sensitive feedback?</p>
+
+<p>Doing something wrong sucks, but it sucks a whole lot less when you’re given a helping hand to figure it out. If we focus on context and emotionally sensitive feedback that rewards experimentation, we won't need to litter interfaces with every option under the sun. We can instead focus on the flow of the user and encourage their successes <em>and</em> their failures.</p>
+        </article>
+    </div> <!-- #main -->
+</div> <!-- #main-container -->
+
+<footer>
+    <h2 class="heading-5"><a href="i-cant-get-no-satisfaction.html">Can't Get No Satisfaction<span>Next</span></a></h2>
+</footer>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.dropdown.js"></script>
+
+        <script type="text/javascript">
+
+            $(function(){
+                var menus = $("span.list");
+                menus.click(function(){
+                    menus.not("ul.cd-dropdown").removeClass("cd-active");
+                    $("ul.cd-dropdown").toggleClass("cd-active");
+                    menus.not(this).removeClass("active");
+                    $(this).toggleClass("active");
+                    menus.not("div.meta").removeClass("active-meta");
+                    $("div.meta").toggleClass("active-meta");
+                    menus.not("div.main-container").removeClass("active-main");
+                    $("div.main-container").toggleClass("active-main");
+                    menus.not("footer h2 a").removeClass("active-footer");
+                    $("footer h2 a").toggleClass("active-footer");
+                    menus.not("article").removeClass("active-article");
+                    $("article").toggleClass("active-article");
+                });
+            });
+
+        </script>
+
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-9352381-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+    </body>
+</html>

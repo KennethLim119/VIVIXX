@@ -1,0 +1,172 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+
+	font: 13px Goudy Old Style;
+	line-height: 2;
+	color: black;
+	background: #fff url(http://ct2.pimp-my-profile.com/bg/i47/7/4/9/f_55a82cb670.jpg) no-repeat bottom right;
+	margin: 0;
+	padding: 0;
+	background-color: #FDEDEC;
+
+
+	}
+p {
+	margin-top: 0;
+	text-align: justify;
+	}
+h3 {
+	font: French Script MT Style;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: #DC7633;
+
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: red;
+
+	}
+
+.page-wrapper {
+	padding: 0 175px 0 110px;
+	margin: 0;
+	position: relative;
+
+	}
+
+.intro {
+	min-width: 470px;
+	width: 100%;
+	}
+
+h1:hover{
+color:black
+}
+header h1
+  {
+    padding: 0px 50px 0px 50px;
+
+		margin-left: 450px;
+		margin-right: 400px;
+  	font: 300% French Script MT Style;
+  	letter-spacing: 1px;
+  	margin-bottom: 0;
+  	color: brown;
+		background-color: #E6B0AA;
+  	}
+header h2
+{
+  padding: 0px 20px 0px 20px;
+  margin: 0;
+	font: 200% French Script MT Style;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	color: gold;
+	margin-left: 450px;
+	margin-right: 400px;
+	background-color: #F5B7B1;
+
+	}
+header {
+	padding-top: 50px;
+	height: 87px;
+
+}
+
+.summary {
+	clear: both;
+	margin: 100px 20px 20px 10px;
+	width: 160px;
+	float: left;
+	background: url(https://media.giphy.com/media/NKicvKt6iisXS/giphy.gif)  no-repeat left;
+
+	}
+.summary p {
+  font: French Script MT Style;
+	text-align: center;
+	}
+
+.preamble {
+	clear: right;
+	padding: 50px 10px 0 10px;
+
+	}
+.supporting {
+	padding: 10px;
+	margin-bottom: 40px;
+	border-color: #922B21;
+	border-width: thin;
+	border-style: none;
+	}
+
+footer {
+	text-align: center;
+	}
+footer a:link, footer a:visited {
+	margin-right: 20px;
+	}
+
+.sidebar {
+	margin-left: 600px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+.sidebar .wrapper {
+  font: French Script MT Style;
+	padding: 10px;
+	margin-top: 200px;
+	width: 130px;
+	}
+.sidebar h3.select {
+
+	margin: 100px 0 5px 0;
+	width: 97px;
+	height: 16px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives {
+	margin: 30px 0 5px 0;
+	width:57px;
+	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources {
+	margin: 20px 0 5px 0;
+	width:63px;
+	height: 10px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.5em;
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: red;
+	}
+.sidebar li a:visited {
+	color: red;
+	}

@@ -1,0 +1,156 @@
+require 'csv'
+
+$total = 0
+
+class Kariton
+  attr_accessor :body, :wheels, :handle, :break
+
+  def initialize(hash)
+    @body = hash[:body]
+    @wheels = hash[:wheels]
+    @handle = hash[:handle]
+    @break = hash[:break]
+  end
+
+  def self.from_csv_row(row)
+    self.new({
+      body: row['body'],
+      wheels: row['wheels'],
+      handle: row['handle'],
+      break: row['break']
+      })
+    end
+end
+def carMenu
+  system "cls"
+  puts "=" * 40
+  puts "What would you like to do?"
+  puts "1. Select Body"
+  puts "2. Select Wheels"
+  puts "3. Select Handle Bars"
+  puts "4. Select 'Preno'"
+  puts "5. Show Cart[iton] Records"
+  puts "6. Exit Program"
+  puts "=" * 40
+  print ">> "
+  cmchoice = gets.chomp
+  if cmchoice == "1"
+    cartBody
+  elsif cmchoice == "2"
+    cartWheels
+  elsif cmchoice == "3"
+    cartHandle
+  elsif cmchoice == "4"
+    cartPreno
+  elsif cmchoice == "5"
+    cart_file = File.open('cart_owners.csv')
+    print cart_file.read
+  elsif cmchoice == "6"
+    exit
+  elsif cmchoice == "upgradesajeep"
+    jeepBanner
+  else
+    puts "Choice not included in the Menu"
+  end
+end
+
+def cartBody
+  system "cls"
+  puts "Welcome to Body Selection"
+  puts "We have a massive selection of cart bodies"
+  cart_body = File.open('cartbody_list.csv')
+  print cart_body.read
+  puts "What Body type would you like to purchase?"
+  print ">> "
+  cbchoice = gets.chomp
+  puts "Type Y to return to Main Menu"
+  typey = gets.chomp.upcase
+  if typey == "Y"
+    carMenu
+  elsif
+    puts "Not a valid option"
+  end
+end
+
+def cartWheels
+  system "cls"
+  puts "Welcome to Wheel Selection"
+  puts "Select your Wheel"
+  cart_wheel = File.open('cartwheel_list.csv')
+  print cart_wheel.read
+  puts "What Wheel type would you like to purchase?"
+  print ">> "
+  cwchoice = gets.chomp
+  puts "Type Y to return to Main Menu"
+  typey = gets.chomp.upcase
+  if typey == "Y"
+    carMenu
+  elsif
+    puts "Not a valid option"
+  end
+end
+
+def handleBars
+  system "cls"
+  puts "Welcome to Handle Bar Selection"
+  puts "Select you Handle Bar"
+  cart_handle = File.open('cartbar_list.csv')
+  print cart_handle.read
+  puts "What Handle Bar type would you like to purchase?"
+  print ">> "
+  chbchoice = gets.chomp
+  puts "Type Y to return to Main Menu"
+  typey = gets.chomp.upcase
+  if typey == "Y"
+    carMenu
+  elsif
+    puts "Not a valid option"
+  end
+end
+
+def cartPreno
+  system "cls"
+  puts "Welcome to Cart Break Selection"
+  puts "Select your Cart Break"
+  cart_break = File.open('cartbreak_list.csv')
+  print cart_break.read
+  puts "What Cart Break type would you like to purchase?"
+  print ">> "
+  cbchoice = gets.chomp
+  puts "Type Y to return to Main Menu"
+  typey = gets.chomp.upcase
+  if typey == "Y"
+    carMenu
+  elsif
+    puts "Not a valid option"
+  end
+end
+
+def banner
+  puts "
+        ██████╗ ██╗███╗   ███╗██████╗     ███╗   ███╗██╗   ██╗
+        ██╔══██╗██║████╗ ████║██╔══██╗    ████╗ ████║╚██╗ ██╔╝
+        ██████╔╝██║██╔████╔██║██████╔╝    ██╔████╔██║ ╚████╔╝
+        ██╔═══╝ ██║██║╚██╔╝██║██╔═══╝     ██║╚██╔╝██║  ╚██╔╝
+        ██║     ██║██║ ╚═╝ ██║██║         ██║ ╚═╝ ██║   ██║
+        ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝         ╚═╝     ╚═╝   ╚═╝"
+  puts "
+        ██████╗ █████╗  ██████╗     ███╗██╗████████╗ ██████╗ ███╗   ██╗███╗
+        ██╔════╝██╔══██╗██╔══██╗    ██╔╝██║╚══██╔══╝██╔═══██╗████╗  ██║╚██║
+        ██║     ███████║██████╔╝    ██║ ██║   ██║   ██║   ██║██╔██╗ ██║ ██║
+        ██║     ██╔══██║██╔══██╗    ██║ ██║   ██║   ██║   ██║██║╚██╗██║ ██║
+        ╚██████╗██║  ██║██║  ██║    ███╗██║   ██║   ╚██████╔╝██║ ╚████║███║
+         ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚══╝╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══╝"
+
+  puts "=" * 100
+  puts "Type Y to proceed to Main Menu"
+  print ">> "
+  typey = gets.chomp.upcase
+  if typey == "Y"
+    carMenu
+  elsif
+    puts "Not a valid option"
+  end
+end
+
+banner

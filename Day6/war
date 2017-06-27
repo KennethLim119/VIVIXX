@@ -1,0 +1,19 @@
+def calculate_age(year_of_birth, current_year)
+if current_year > year_of_birth
+if current_year - year_of_birth > 1
+return "You are #{(current_year - year_of_birth)} years old."
+else
+return "You are #{(current_year - year_of_birth)} year old."
+end
+end
+
+if year_of_birth == current_year
+return "You Were born this very year!"
+end
+
+if year_of_birth > current_year
+if year_of_birth - current_year > 1
+return "You will be born in #{(year_of_birth - current_year)} years."
+else
+return "You will be born in #{(year_of_birth - current_year)} year."
+end
